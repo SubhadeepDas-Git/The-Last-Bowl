@@ -1,32 +1,112 @@
-# React + TypeScript + Vite
+# 🍜 The Last Bowl
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> A Cozy Ramen Retreat After Dark.
 
-Currently, two official plugins are available:
+**The Last Bowl** is a modern, atmospheric ramen restaurant web experience designed around the feeling of late-night comfort.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+It combines an editorial restaurant aesthetic with interactive features such as menu exploration, bowl customization, cart and checkout, reservations, authentication, customer profiles, and simulated delivery tracking.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌙 About The Project
 
-## Expanding the Oxlint configuration
+The Last Bowl was created around a simple idea:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+> *Imagine walking into a tiny ramen shop at 1 AM. The city outside is quiet. Warm light fills the room, steam rises from your bowl, and everything finally slows down.*
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+The website is designed to digitally recreate that feeling while providing the functionality expected from a modern restaurant platform.
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+The visual direction focuses on:
+
+- Dreamy late-night atmosphere
+- Soft pastel colors
+- Editorial typography
+- Japanese-inspired aesthetics
+- Warm and intimate interactions
+- Subtle animations
+- Minimal and elegant layouts
+
+---
+
+## ✨ Features
+
+### 🍜 Menu & Ramen
+
+Explore the restaurant's signature ramen collection.
+
+Current signature bowls include:
+
+| Bowl | Price | Style |
+|---|---:|---|
+| Moonlit Miso | $13 | House Favorite |
+| Velvet Tonkotsu | $15 | Rich & Creamy |
+| Dream Chaser Spicy Ramen | $14 | Spicy |
+| Starlit Shoyu | $12 | Light & Classic |
+| Midnight Curry Ramen | $14 | Hearty |
+| Petal Yuzu Ramen | $13 | Vegetarian |
+
+The menu uses an editorial presentation rather than a conventional restaurant-card layout. :contentReference[oaicite:2]{index=2}
+
+---
+
+### 🥢 Build Your Bowl
+
+Create a custom ramen bowl by selecting:
+
+**Broth**
+- Miso
+- Shoyu
+- Tonkotsu
+- Curry
+- Yuzu Vegetable
+
+**Noodles**
+- Thin
+- Medium
+- Thick
+
+**Protein**
+- Chashu
+- Chicken
+- Tofu
+- Egg
+- No Protein
+
+**Toppings**
+- Ajitama Egg
+- Corn
+- Bamboo Shoots
+- Scallions
+- Mushrooms
+- Wood Ear Mushroom
+- Nori
+- Chili Oil
+
+**Extras**
+- Extra Noodles
+- Extra Egg
+- Extra Protein
+- Extra Toppings
+
+The total price is calculated dynamically based on the selected ingredients.
+
+---
+
+### 🌓 Three Theme Modes
+
+The website supports three visual modes:
+
+- ☀️ Light
+- 🌙 Dark
+- ✦ Pastel
+
+The selected theme is persisted locally so it remains active after refreshing the website.
+
+The design palette includes:
+
+```text
+#FFFFFF
+#BFD1E2
+#7CAFD1
+#B3AAE2
+#121824
